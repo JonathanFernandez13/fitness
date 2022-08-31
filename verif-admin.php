@@ -32,11 +32,11 @@ if(empty($nom) || empty($prenom)) {
     $email = $_POST["email"];
     $password = $_POST["password"];
  var_dump($_POST);
-    $sqli = "INSERT INTO 'admin' (`email`, `password`) VALUES ('$email', '$password')";
+    $sqli = "SELECT * FROM'admin'";
     if (empty($email) || empty($password)){
         header("location: admin.php?add=0");
     }else{
-        if($result = mysqli_query($link, $sqli)){
+        if(mysqli_query($link, $sqli)){
             header("location: admin.php?add=1");
         }else{
 
