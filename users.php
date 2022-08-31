@@ -42,9 +42,6 @@
       <th scope="row"><?php echo $result["tel"] ?> </th>
       <td scope="col">
       <button class="btn btn-danger">
-          <a  class="text-dark"href="update-user?id= <?php echo $result["id"] ?>"> UPDATE</a>
-      </button>
-      <button class="btn btn-danger">
           <a  class="text-dark"href="delete-user?id= <?php echo $result["id"] ?>"> DELETE</a>
       </button>
 </td>
