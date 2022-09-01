@@ -62,7 +62,7 @@ session_start();
                     <div class="alert alert-danger">Formulaire non envoyé.</div>
                 <?php endif; ?> 
         
-                <form method="POST" action="verif-contact.php" id="myForm">
+                <form method="POST" action="" id="myForm">
                     <div class="row mb-4">
                         <div class="col-md-5">
                             <div class="form-outline">

@@ -23,22 +23,20 @@ if(empty($nom) || empty($prenom)) {
 #while($row = mysqli_fetch_assoc($result)){
     #var_dump($row);
 #}
-    $name = $_POST["nom"];
-    $prenom = $_POST["prenom"];
-    $mail = $_POST["mail"];
-    $tel = $_POST["tel"];
-    $sujet = $_POST["sujet"];
-    $message = $_POST["message"];
+    $mail = $_POST["email"];
+    $password = $_POST['password'];
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+var_dump($hashed_password);
 
-    $sqli = "INSERT INTO user (`nom`, `prenom`, `mail`, `tel`, `sujet`, `message`) VALUES ('$name', '$prenom', '$mail', '$tel', '$sujet', '$message')";
+    $sqli = "INSERT INTO user (`mail`, `password`) VALUES ('$mail',  '$hashed_password')";
 
     var_dump($_POST);
 
-    if (empty($name) || empty($prenom) || empty($mail) || empty($tel) || empty($sujet) || empty($message)){
-        header("location:contact.php?add=0");
+    if ( empty($mail) || empty($password)){
+        header("location:fomr-user.php?add=0");
     }else{
         if($result = mysqli_query($link, $sqli)){
-            header("location:contact.php?add=1");
+            header("location:fomr-user.php?add=1");
         }else{
 
         }

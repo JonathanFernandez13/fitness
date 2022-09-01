@@ -4,8 +4,8 @@
     // 1-A) JE VEUX RECUPERER un paramètre
         // a) stocker mon paramètre dans une variable
         $id = $_POST["id"]; 
-         $email = $_POST["email"]; 
-        $password = $_POST["password"]; 
+         $email = $_POST["email"];
+         $password = $_POST["password"]; 
 //         // 1-B) Base de donnée
 //             // a) Me connecter à la base de donnée
             $link = mysqli_connect("localhost", "root", "", "contact", );
