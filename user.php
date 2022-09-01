@@ -13,7 +13,6 @@
  
 $link = mysqli_connect("localhost", "root", "", "contact");
 $id = $_GET["id"];
-var_dump($_GET);
 $sqli = "SELECT * FROM user WHERE id = $id";
 $result = mysqli_query($link, $sqli);
 $row = mysqli_fetch_assoc($result);//ARRETE D'OUBLIER TON FETCH_ASSOC_ BORDEL!!!!!!!!!!!!!!!!!!!!!!!
@@ -27,7 +26,7 @@ $row = mysqli_fetch_assoc($result);//ARRETE D'OUBLIER TON FETCH_ASSOC_ BORDEL!!!
             </div>
             <div class="form-group">
                 <label for="password">Mot de passe</label>
-                <input type="text" name="password" class="form-control" value="<?php echo htmlspecialchars($row["password"], ENT_QUOTES, 'UTF-8') ?>">
+                <input type="password" name="password" class="form-control" value="<?php echo htmlspecialchars($row["password"], ENT_QUOTES, 'UTF-8') ?>">
             </div>
             <div class="form-group">
                 <a href="users.php"><input type="button" value="Retour Liste" class="btn btn-primary"></a>
