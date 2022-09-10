@@ -15,7 +15,7 @@
 //$sqli = "SELECT * FROM user WHERE date_creation BETWEEN '2005-10-04' AND '2005-10-14'";
 //$sqli = "SELECT nom, prenom, date_creation FROM user LIMIT 3";
 //$sqli = "SELECT nom FROM user WHERE nom LIKE '%i'";
-  $sqli = "SELECT id, nom, prenom, mail, tel FROM user";
+  $sqli = "SELECT * FROM user";
   $results = mysqli_query($link, $sqli);
 /*while ($row = mysqli_fetch_assoc($result)){
     var_dump($row);
@@ -32,11 +32,11 @@
     <th scope="col">DELETE</th>  
     </tr>
   </thead>
-  <?php foreach ($results as $result) : ?>
   <tbody class="">
+  <?php foreach ($results as $result) : ?>
     <tr>
       <th scope="row"><?php echo $result["id"] ?> </th>
-      <th scope="row"><a class="text-success" href="user?id=<?php echo $result["id"] ?>"><?php echo $result["nom"] ?></a></th>
+      <th scope="row"><a class="text-success" href="user?id=<?php echo $result["id"] ?>"><?php echo $result["mail"] ?></a></th>
       <th scope="row"><?php echo $result["prenom"] ?> </th>
       <th scope="row"><?php echo $result["mail"] ?> </th>
       <th scope="row"><?php echo $result["tel"] ?> </th>
@@ -45,7 +45,7 @@
           <a  class="text-dark"href="delete-user?id= <?php echo $result["id"] ?>"> DELETE</a>
       </button>
 </td>
+<?php endforeach ?>
   </tbody>
-  <?php endforeach ?>
   </body>
 </html>

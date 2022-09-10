@@ -97,6 +97,11 @@ h3::after {
 /*SECTION ACTU START*/
 .card {border: none !important;}
 /*SECTION ACTU END*/
+
+.img_fluid{
+  width: 296px;
+}
+
 .suite-t {position: relative;}
 .suite-t:after {
   position: absolute;
@@ -122,6 +127,8 @@ h3::after {
 /*FOOTER START*/
 a:hover {color: #CBAC6C !important;}
 /*FOOTER END*/
+
+
 @media only screen and (max-width: 768px) {
   .btn {width: 100% !important;}
   .content-footer {
