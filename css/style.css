@@ -98,8 +98,8 @@ h3::after {
 .card {border: none !important;}
 /*SECTION ACTU END*/
 
-.img_fluid{
-  width: 296px;
+.img_width{
+  width: 296px !important; 
 }
 
 .suite-t {position: relative;}

@@ -4,7 +4,7 @@ function add_img (string $class_img = "", $url_img, $combien_img = 7) : void
     for ($i = 1 ; $i < $combien_img ; $i++){
         echo <<<HTML
                 <div class="col-2 p-0 coach">
-                    <img class="$class_img" src="$url_img$i.jpg" alt="">
+                    <img class="$class_img img_width" src="$url_img$i.jpg" style="width: 300px" alt="">
                 </div>
 HTML;
     }
