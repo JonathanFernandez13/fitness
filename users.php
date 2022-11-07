@@ -28,7 +28,6 @@
       <th scope="col">NOM</th>
       <th scope="col">PRENOM</th>
       <th scope="col">MAIL</th>
-      <th scope="col">TEL</th>
     <th scope="col">DELETE</th>  
     </tr>
   </thead>
@@ -36,10 +35,9 @@
   <?php foreach ($results as $result) : ?>
     <tr>
       <th scope="row"><?php echo $result["id"] ?> </th>
-      <th scope="row"><a class="text-success" href="user?id=<?php echo $result["id"] ?>"><?php echo $result["mail"] ?></a></th>
+      <th scope="row"><a class="text-success" href="user?id=<?php echo $result["id"] ?>"><?php echo $result["nom"] ?></a></th>
       <th scope="row"><?php echo $result["prenom"] ?> </th>
       <th scope="row"><?php echo $result["mail"] ?> </th>
-      <th scope="row"><?php echo $result["tel"] ?> </th>
       <td scope="col">
       <button class="btn btn-danger">
           <a  class="text-dark"href="delete-user?id= <?php echo $result["id"] ?>"> DELETE</a>

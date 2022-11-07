@@ -62,7 +62,7 @@ session_start();
                     <div class="alert alert-danger">Formulaire non envoyé.</div>
                 <?php endif; ?> 
         
-                <form method="POST" action="" id="myForm">
+                <form method="POST" action="verif-contact.php" id="myForm">
                     <div class="row mb-4">
                         <div class="col-md-5">
                             <div class="form-outline">
@@ -83,7 +83,7 @@ session_start();
                     <div class="row mb-4">
                         <div class="col-md-5">
                             <div class="form-outline">
-                                <input type="email" name="mail" id="email" class="form-control bg-light" placeholder="VOTRE EMAIL" />
+                                <input type="email" name="email" id="email" class="form-control bg-light" placeholder="VOTRE EMAIL" />
                                 <span id="errorEmail">Email invalide!!</span>
                                 <label class="form-label" for="email"></label>
                             </div>

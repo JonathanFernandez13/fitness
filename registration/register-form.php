@@ -4,7 +4,7 @@
     <input type="text" class="box-input" name="email" placeholder="Email" required />
     <input type="password" class="box-input" name="password" placeholder="Password" required />
     <input type="submit" name="submit" value="Sign Up" class="box-button" />
-    <p class="box-register">Already registered ? <a href="login.php">Log In</a></p>
+    <p class="box-register">Already registered ? <a href="auth.php">Log In</a></p>
 </form>
 
 </body>

@@ -24,19 +24,24 @@ if(empty($nom) || empty($prenom)) {
     #var_dump($row);
 #}
     $mail = $_POST["email"];
-    $password = $_POST['password'];
-$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-var_dump($hashed_password);
+    $prenom = $_POST["prenom"];
+    $nom = $_POST["nom"];
+    $tel = $_POST["tel"];
+    $sujet = $_POST["sujet"];
+    $message = $_POST["message"];
+//     $password = $_POST['password'];
+// $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+// var_dump($hashed_password);
 
-    $sqli = "INSERT INTO user (`mail`, `password`) VALUES ('$mail',  '$hashed_password')";
+    $sqli = "INSERT INTO contact (`nom`,`prenom`,  `email`, `tel`, `sujet`, `message`) VALUES ('$mail',  '$nom', '$prenom', '$tel', '$sujet', '$message')";
 
     var_dump($_POST);
 
-    if ( empty($mail) || empty($password)){
-        header("location:fomr-user.php?add=0");
+    if ( empty($mail) || empty($tel) || empty($nom) || empty($prenom) || empty($sujet) || empty($message)){
+        header("location:contact.php?add=0");
     }else{
         if($result = mysqli_query($link, $sqli)){
-            header("location:fomr-user.php?add=1");
+            header("location:contact.php?add=1");
         }else{
 
         }

@@ -1,5 +1,13 @@
 <h1 class="text-center">Update User</h1>
-        <form class="form_user mt-5" method="POST" action="verif-contact.php">
+        <form class="form_user mt-5" method="POST" action="verif-contact.php"> <div class="form-group">
+        <div class="form-group"> 
+                <label for="nom">Prenom</label>
+                    <input type="prenom" name="prenom" class="form-control" value="">
+            </div>
+        <div class="form-group"> 
+                <label for="nom">Nom</label>
+                    <input type="prenom" name="prenom" class="form-control" value="">
+            </div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" class="form-control" value="">
