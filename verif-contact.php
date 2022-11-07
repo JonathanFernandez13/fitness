@@ -23,7 +23,7 @@ if(empty($nom) || empty($prenom)) {
 #while($row = mysqli_fetch_assoc($result)){
     #var_dump($row);
 #}
-    $mail = $_POST["email"];
+    $email = $_POST["email"];
     $prenom = $_POST["prenom"];
     $nom = $_POST["nom"];
     $tel = $_POST["tel"];
@@ -33,11 +33,11 @@ if(empty($nom) || empty($prenom)) {
 // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 // var_dump($hashed_password);
 
-    $sqli = "INSERT INTO contact (`nom`,`prenom`,  `email`, `tel`, `sujet`, `message`) VALUES ('$mail',  '$nom', '$prenom', '$tel', '$sujet', '$message')";
+    $sqli = "INSERT INTO contact (`nom`,`prenom`,  `email`, `tel`, `sujet`, `message`) VALUES ('$nom', '$prenom', '$email', '$tel', '$sujet', '$message')";
 
     var_dump($_POST);
 
-    if ( empty($mail) || empty($tel) || empty($nom) || empty($prenom) || empty($sujet) || empty($message)){
+    if ( empty($nom) || empty($prenom) || empty($email) || empty($tel) || empty($sujet) || empty($message)){
         header("location:contact.php?add=0");
     }else{
         if($result = mysqli_query($link, $sqli)){

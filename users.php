@@ -15,7 +15,7 @@
 //$sqli = "SELECT * FROM user WHERE date_creation BETWEEN '2005-10-04' AND '2005-10-14'";
 //$sqli = "SELECT nom, prenom, date_creation FROM user LIMIT 3";
 //$sqli = "SELECT nom FROM user WHERE nom LIKE '%i'";
-  $sqli = "SELECT * FROM user";
+  $sqli = "SELECT * FROM contact";
   $results = mysqli_query($link, $sqli);
 /*while ($row = mysqli_fetch_assoc($result)){
     var_dump($row);
@@ -37,7 +37,7 @@
       <th scope="row"><?php echo $result["id"] ?> </th>
       <th scope="row"><a class="text-success" href="user?id=<?php echo $result["id"] ?>"><?php echo $result["nom"] ?></a></th>
       <th scope="row"><?php echo $result["prenom"] ?> </th>
-      <th scope="row"><?php echo $result["mail"] ?> </th>
+      <th scope="row"><?php echo $result["email"] ?> </th>
       <td scope="col">
       <button class="btn btn-danger">
           <a  class="text-dark"href="delete-user?id= <?php echo $result["id"] ?>"> DELETE</a>
