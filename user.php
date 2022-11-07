@@ -28,10 +28,7 @@ $row = mysqli_fetch_assoc($result);//ARRETE D'OUBLIER TON FETCH_ASSOC_ BORDEL!!!
                 <label for=prenom">Prenom</label>
                 <input type="text" name="prenom" class="form-control" value="<?php echo htmlspecialchars($row["prenom"], ENT_QUOTES, 'UTF-8') ?>">
             </div>
-            <div class="form-group">
-                <label for=tel">Telephone</label>
-                <input type="number" name="tel" class="form-control" value="<?php echo htmlspecialchars($row["tel"], ENT_QUOTES, 'UTF-8') ?>">
-            </div>
+            
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" class="form-control" value="<?php echo htmlspecialchars($row["email"], ENT_QUOTES, 'UTF-8') ?>">
