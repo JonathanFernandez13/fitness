@@ -7,7 +7,7 @@
         // a) Me connecter à la base de donnée
         $link = mysqli_connect("localhost", "root", "", "contact", );
         // b) Crée ma requete de suppression par rapport à mon id que j'aurai en paramètre ($_GET)
-        $sqli = "DELETE FROM user WHERE id= $id";
+        $sqli = "DELETE FROM contact WHERE id= $id";
         // c) Exécuté ma requete de suppression
         if(mysqli_query($link,$sqli)){
 // 2) PHP redirection 
