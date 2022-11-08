@@ -1,8 +1,4 @@
 <?php include_once "elements/header-old.php";?>
-<?php
-ob_start();
-session_start();
-?>
     <section class="container">
         <div class="row">
             <div class="col-4 coordonnee">
@@ -55,12 +51,12 @@ session_start();
             </div>
             <div class="col-8 coordonnee">
                 <h3 class="title-formulaire mt-5 mb-5">FORMULAIRE DE CONTACT</h3>
-                   <?php if (isset($_GET["add"]) && $_GET["add"] == 1) : ?>
-                    <div class="alert alert-success">Formulaire envoyé avec success.</div>
-                    <?php  header("refresh:2;url=index.php"); ?>
+                    <?php if (isset($_GET["add"]) && $_GET["add"] == 1) : ?>
+                   <div class="alert alert-success">Formulaire envoyé avec success.</div>
+                     <?php // header("refresh:2;url=index.php"); ?> 
                 <?php elseif (isset($_GET["add"]) &&  $_GET["add"] == 0) :  ?>
                     <div class="alert alert-danger">Formulaire non envoyé.</div>
-                <?php endif; ?> 
+                    <?php endif ?>
         
                 <form method="POST" action="verif-contact.php" id="myForm">
                     <div class="row mb-4">
@@ -115,4 +111,4 @@ session_start();
             </div>
         </div>
     </section>
-<?php include_once "elements/footer-old.php" ?>
+<?php  include_once './elements/footer-old.php' ?>

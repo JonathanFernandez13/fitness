@@ -14,7 +14,7 @@ HTML;
  function add_menu(string $class_item, string $class_link, string $class_url, string $title){
     return <<<HTML
 <li class="$class_item active">
-<a class="$class_link text-white pr-5" href="$class_url">$title</a>
+<a class="$class_link text-white pr-5 resp-link" href="$class_url">$title</a>
 </li>
 HTML;
 }

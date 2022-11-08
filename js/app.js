@@ -23,7 +23,7 @@ changeColorOnScroll();
 /*FUNCTION CHANGE COLOR ON SCROLL END*/
 /*FUNCTION CHANGE COLOR ON SCROLL START*/
 let pathArr = window.location.pathname.split('/')
-if(pathArr.includes('contact.html')){
+if(pathArr.includes('contact.php')){
     let myForm = document.getElementById("myForm");
     myForm.addEventListener("submit", validForm);
     function validForm(e){
@@ -31,6 +31,11 @@ if(pathArr.includes('contact.html')){
         let prenom = document.getElementById("prenom");
         let telephone = document.getElementById("number");
         let email = document.getElementById("email");
+
+        let errorName = document.getElementById("nom");
+        let errorFirstName = document.getElementById("prenom");
+        let errorTel = document.getElementById("number");
+        let errorEmail = document.getElementById("email");
         
         let myRegex = (/^[a-zA-Z]+$/);
         let myRegexNumb = (/^[.0-9 ]+$/);

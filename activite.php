@@ -6,20 +6,20 @@
         <h3 class=" title-trainning text-center pt-5 mb-0">LE TRAINING FONCTIONNEL</h3>
         <div class="row responsive-d-block">
             <div class="col p-0 mt-5">
-                <p>Aujourd'hui beaucoup de salles de sport vendent des abonnements où vous avez accès à tous les
+                <p class="text-90">Aujourd'hui beaucoup de salles de sport vendent des abonnements où vous avez accès à tous les
                     services du club (cours collectifs, plateau musculation...) mais combien vous connaissent au point
                     de connaitre vos objectifs et de savoir si vous êtes en bonne voie pour les atteindre ? 
                 </p>
-                <p>Aujourd'hui beaucoup de salles de sport vendent des abonnements où vous avez accès à tous les
+                <p class="text-90">Aujourd'hui beaucoup de salles de sport vendent des abonnements où vous avez accès à tous les
                     services du club (cours collectifs, plateau musculation...) mais combien vous connaissent au point
                     de connaitre vos objectifs et de savoir si vous êtes en bonne voie pour les atteindre ?
                 </p>
-                <p>Aujourd'hui beaucoup de salles de sport vendent des abonnements où vous avez accès à tous les
+                <p class="text-90">Aujourd'hui beaucoup de salles de sport vendent des abonnements où vous avez accès à tous les
                     services du club (cours collectifs, plateau musculation...) mais combien vous connaissent au point
                     de connaitre vos objectifs et de savoir si vous êtes en bonne voie pour les atteindre ?
                 </p>
-                <a href="../html/error-404.html" class="btn text-white">VOIR NOS OFFRES ET FORMULES</a>
-                <a href="../html/error-404.html" class="btn text-white">CONTACT ET RÉSERVATION</a>
+                <a href="./error/error-404.html" class="btn text-white btn-resp">VOIR NOS OFFRES ET FORMULES</a>
+                <a href="./error/error-404.html" class="btn text-white btn-resp">CONTACT ET RÉSERVATION</a>
             </div>
             <div class="col">
                 <div id="carouselExampleIndicators" class="carousel-hauteur carousel slide mt-5" data-ride="carousel">
@@ -90,16 +90,17 @@
                     <h6 class="date text-dark text-center font-weight-bold">TRX FUSION</h6>
                     <p class="card-text text-dark">Some quick example text to build on the card title and make up the
                         bulk of the card's content. Some quick example text to build on the card title and make up the
-                        bulk of the card's content. Some quick example text to build on the card.
+                        bulk of the card's content.
                     </p>
                     <p><span class="font-weight-bold">Durée: </span> 30 minutes</p>
                 </div>
             </div>
         </div>
     </section>
-    <h3 class="title-atelier text-center text-dark">LES ACTIVITES PROPOSEES AU STUDIO BIARRYTZ</h3>
+    <h3 class="title-atelier-bis text-center text-dark">LES ACTIVITES PROPOSEES AU STUDIO BIARRYTZ</h3>
     <!--SECTION ATELIER END-->
     <!--SECTION ACTIVITE START-->
 
     <!--SECTION ATELIER END-->
     <?php include_once "elements/footer-old.php" ?>
+    

@@ -31,84 +31,84 @@ $(document).ready(() => {
 
 
     /*FUNCTION MYFORM START*/
-    let pathArr = location.pathname.split("/");
-    if (pathArr.includes("contact.html")) {
-        //$("#myForm").on("submit", validForm);
-     /*   function validForm(e) {
-            let myRegex = (/^[a-zA-Z]+$/);
-            let myRegexNumb = (/^[.0-9 ]+$/);
-            let myRegexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    // let pathArr = location.pathname.split("/");
+    // if (pathArr.includes("contact.php")) {
+    //     $("#myForm").on("submit", validForm);
+    //     function validForm(e) {
+    //         let myRegex = (/^[a-zA-Z]+$/);
+    //         let myRegexNumb = (/^[.0-9 ]+$/);
+    //         let myRegexMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-            if ($("#nom").val() === "") {//Si!! val()r de nom strictement egale a ""(rien d'ecrit)
-                $('#errorName').html("Saisie ton Prenom!!");// cible mon span par son id(#errorName) et avec .htm ecrit "Saisie ton prenom!!"
-                $('#errorName').css('color', 'red');// cible mon span par son id (#errorName) et avec .css rajoute couleur du text en rouge en utilisant ("color","red")
-                $("#nom").css("border", "solid 1px red"); //cible mon input par son id (#nom) et avec .css rajoute la border de l'input en  solid 1px et rouge("border"), (solid 1px red)
-                e.preventDefault();
-            }
-            else if (!myRegex.test($("#nom").val())) {// Sinon-Si!! le test de ma Regex est different de la valeur rentrer dans mon input (#nom)
-                $('#errorName').html("Mauvaise Saisie!!");// cible mon span par son id(#errorName) et avec .htm ecrit "Mauvaise Saisie!!"
-                $('#errorName').css("color", "red");// cible mon span par son id (#errorName) et avec .css rajoute couleur du text en rouge en utilisant ("color","red")
-                $('nom').css("border", "solid 1px red"); //cible mon input par son id (#nom) et avec .css rajoute la border de l'input en  solid 1px et rouge("border"), (solid 1px red)
-                e.preventDefault();
-            }
-            else {//Sinon!!
-                $('#errorName').html("Saisie Valide!!");// cible mon span par son id(#errorName) et avec .htm ecrit "Saisie Valide!!"
-                $('#errorName').css("color", "green");// cible mon span par son id (#errorName) et avec .css rajoute couleur du text en vert en utilisant ("color","green")
-                $("#nom").css("border", "solid 1px green");//cible mon input par son id (#nom) et avec .css rajoute la border de l'input en  solid 1px et rouge("border"), (solid 1px red)
-            }
-            if ($("#prenom").val() === "") {
-                $("#errorFirstName").html("Saisie ton Nom");
-                $("#errorFirstName").css("color", "red");
-                $("#prenom").css("border", "solid 1px red");
-                e.preventDefault();
-            }
-            else if (!myRegex.test($("#prenom").val())) {
-                $("#errorFirstName").html("Pas de chiffre dans ton nom!!");
-                $("#errorFirstName").css("color", "red");
-                $("#prenom").css("border", "solid 1px red");
-                e.preventDefault();
-            }
-            else {
-                $("#errorFirstName").html("Bravo!!");
-                $("#errorFirstName").css("color", "green");
-                $("#prenom").css("border", "solid 1px green");
-            }
-            if ($("#number").val() === "") {
-                $("#errorTel").html("Saisie ton numero de tel");
-                $("#errorTel").css("color", "red");
-                $("#number").css("border", "solid 1px red");
-                e.preventDefault();
-            }
-            else if (!myRegexNumb.test($("#number").val())) {
-                $("#errorTel").html("Mauvaise Saisie");
-                $("#errorTel").css("color", "red");
-                $("#number").css("border", "solid 1px red");
-                e.preventDefault();
-            }
-            else {
-                $("#errorTel").html("Bravo!!");
-                $("#errorTel").css("color", "green");
-                $("#number").css("border", "solid 1px green");
-            }
-            if ($("#email").val() === "") {
-                $("#errorEmail").html("Saisie ton e-mail");
-                $("#errorEmail").css("color", " red");
-                $("#email").css("border", "solid 1px red");
-                e.preventDefault();
-            }
-            else if (!myRegexMail.test($("#email").val())) {
-                $("#errorEmail").html("e-mail non valide");
-                $("#errorEmail").css("color", " red");
-                $("#email").css("border", "solid 1px red");
-                e.preventDefault();
-            }
-            else {
-                $("#errorEmail").html("Bravo!!");
-                $("#errorEmail").css("color", " green");
-                $("#email").css("border", "solid 1px green");
-            }
-        }
-    } */
+    //         if ($("#nom").val() === "") {//Si!! val()r de nom strictement egale a ""(rien d'ecrit)
+    //             $('#errorName').html("Saisie ton Prenom!!");// cible mon span par son id(#errorName) et avec .htm ecrit "Saisie ton prenom!!"
+    //             $('#errorName').css('color', 'red');// cible mon span par son id (#errorName) et avec .css rajoute couleur du text en rouge en utilisant ("color","red")
+    //             $("#nom").css("border", "solid 1px red"); //cible mon input par son id (#nom) et avec .css rajoute la border de l'input en  solid 1px et rouge("border"), (solid 1px red)
+    //             e.preventDefault();
+    //         }
+    //         else if (!myRegex.test($("#nom").val())) {// Sinon-Si!! le test de ma Regex est different de la valeur rentrer dans mon input (#nom)
+    //             $('#errorName').html("Mauvaise Saisie!!");// cible mon span par son id(#errorName) et avec .htm ecrit "Mauvaise Saisie!!"
+    //             $('#errorName').css("color", "red");// cible mon span par son id (#errorName) et avec .css rajoute couleur du text en rouge en utilisant ("color","red")
+    //             $('nom').css("border", "solid 1px red"); //cible mon input par son id (#nom) et avec .css rajoute la border de l'input en  solid 1px et rouge("border"), (solid 1px red)
+    //             e.preventDefault();
+    //         }
+    //         else {//Sinon!!
+    //             $('#errorName').html("Saisie Valide!!");// cible mon span par son id(#errorName) et avec .html ecrit "Saisie Valide!!"
+    //             $('#errorName').css("color", "green");// cible mon span par son id (#errorName) et avec .css rajoute couleur du text en vert en utilisant ("color","green")
+    //             $("#nom").css("border", "solid 1px green");//cible mon input par son id (#nom) et avec .css rajoute la border de l'input en  solid 1px et rouge("border"), (solid 1px red)
+    //         }
+    //         if ($("#prenom").val() === "") {
+    //             $("#errorFirstName").html("Saisie ton Nom");
+    //             $("#errorFirstName").css("color", "red");
+    //             $("#prenom").css("border", "solid 1px red");
+    //             e.preventDefault();
+    //         }
+    //         else if (!myRegex.test($("#prenom").val())) {
+    //             $("#errorFirstName").html("Pas de chiffre dans ton nom!!");
+    //             $("#errorFirstName").css("color", "red");
+    //             $("#prenom").css("border", "solid 1px red");
+    //             e.preventDefault();
+    //         }
+    //         else {
+    //             $("#errorFirstName").html("Bravo!!");
+    //             $("#errorFirstName").css("color", "green");
+    //             $("#prenom").css("border", "solid 1px green");
+    //         }
+    //         if ($("#number").val() === "") {
+    //             $("#errorTel").html("Saisie ton numero de tel");
+    //             $("#errorTel").css("color", "red");
+    //             $("#number").css("border", "solid 1px red");
+    //             e.preventDefault();
+    //         }
+    //         else if (!myRegexNumb.test($("#number").val())) {
+    //             $("#errorTel").html("Mauvaise Saisie");
+    //             $("#errorTel").css("color", "red");
+    //             $("#number").css("border", "solid 1px red");
+    //             e.preventDefault();
+    //         }
+    //         else {
+    //             $("#errorTel").html("Bravo!!");
+    //             $("#errorTel").css("color", "green");
+    //             $("#number").css("border", "solid 1px green");
+    //         }
+    //         if ($("#email").val() === "") {
+    //             $("#errorEmail").html("Saisie ton e-mail");
+    //             $("#errorEmail").css("color", " red");
+    //             $("#email").css("border", "solid 1px red");
+    //             e.preventDefault();
+    //         }
+    //         else if (!myRegexMail.test($("#email").val())) {
+    //             $("#errorEmail").html("e-mail non valide");
+    //             $("#errorEmail").css("color", " red");
+    //             $("#email").css("border", "solid 1px red");
+    //             e.preventDefault();
+    //         }
+    //         else {
+    //             $("#errorEmail").html("Bravo!!");
+    //             $("#errorEmail").css("color", " green");
+    //             $("#email").css("border", "solid 1px green");
+    //         }
+    //     }
+    // } 
 
     let name = $("#nom");
     let prename = $("#prenom");
@@ -229,6 +229,6 @@ $(document).ready(() => {
             message.removeClass("control-danger")
         }
     }
-}
+
 })
 /*FUNCTION MYFORM END*/

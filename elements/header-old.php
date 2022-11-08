@@ -56,22 +56,22 @@
                     <a class="nav-link text-white  pr-5" href="contact.php">CONTACT</a>
                 </li> -->
                 <li class=" nav-item">
-                    <a class=" text-white text-decoration-none nav-link" href="tel: >05 59 47 84 18">
+                    <a class=" text-white text-decoration-none nav-link" id="pad" href="tel: >05 59 47 84 18">
                         <i class="iconify mobile" data-icon="fontisto:mobile-alt" style="color: white;"></i>05 59 47 84 18
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class=" nav-link reseaux" href="./error/error-404.html">
+                    <a class=" nav-link " id="reseaux" href="./error/error-404.html">
                         <i class="iconify" data-icon="dashicons:facebook" style="color: white;"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link reseaux" href="./html/error-404.html">
+                    <a class="nav-link " id="reseaux" href="./error/error-404.html">
                         <i class="iconify" data-icon="ant-design:instagram-outlined" style="color: white;"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link reseaux" href="./html/error-404.html">
+                    <a class="nav-link " id="reseaux" href="./error/error-404.html">
                         <i class="iconify" data-icon="cib:tripadvisor" style="color: white;"></i>
                     </a>
                 </li>
@@ -97,7 +97,7 @@
                     <img class="d-block w-100" src="./images/slider/slide_1.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h4 class="text-slide text-center mb-5">2 INSCRIPTIONS SIMULTANEES = UN 3EME ABONNEMENT DE 6 MOIS OFFERT</h4>
-                        <button class="p-3 bg-transparent border-white rounded text-white mb-5 mt-5">Plus d'infos</button>
+                        <button class="p-3 bg-transparent border-white rounded text-white mb-5 mt-5"><a href="./error/error-404.html" class="btn-href text-white">Plus d'infos</a></button>
                     </div>
                 </div>
                 <div class="carousel-item">
